@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --cherry:#C0002A;
+  --ink:#0a0a0a;
+  --ivory:#ffffff;
+  
+}
+
+html, body { height: 100%; }
+body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
