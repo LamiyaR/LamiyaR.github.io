@@ -21,6 +21,26 @@ function clsx(...c){return c.filter(Boolean).join(" ");}
 
 // === QUOTES ===
 const QUOTES = [
+  "I don’t chase trends — I debug them.",
+  "Code like couture: tailored, timeless, and a little dangerous.",
+  "Some build models. I build rumors with results.",
+  "The algorithm isn’t the drama — I am.",
+  "Perfection is boring. I prefer version 1.0 with bite.",
+  "My commits break ceilings, not builds.",
+  "Behind every clean UI is a sleepless night and questionable caffeine choices.",
+  "They said it couldn’t scale. I said watch me.",
+  "Half scientist, half scandal.",
+  "Make it elegant enough to whisper, and smart enough to roar.",
+  "I treat bugs like rumors — fix them fast and move on flawless.",
+  "Confidence is my favorite runtime.",
+  "When they zig, I refactor.",
+  "The secret ingredient is an overdeveloped sense of ambition.",
+  "I turn chaos into clean commits and gossip into growth metrics.",
+  "Don’t just build. Leave architecture that flirts with immortality.",
+  "If it’s not breaking the internet, it’s not pushing enough boundaries.",
+  "They wanted a prototype; I built a prophecy.",
+  "Every line of code deserves a headline.",
+  "Innovation with a side of audacity.",
   "Rumors fade. Results don't.",
   "Make it elegant. Make it measurable.",
   "Beautiful UI, disciplined models.",
@@ -32,6 +52,7 @@ const QUOTES = [
   "Users don’t read docs—design for that.",
   "First make it work, then make it sing.",
 ];
+
 
 function usePrefersReducedMotion(){
   const [prefers,setPrefers]=useState(false);
@@ -264,16 +285,21 @@ export default function App(){
           )}
 
           <div>
-            <RevealHeadline
-              kicker="AI • ENGINEERING • PRODUCT"
-              title={<>
-                Crafting <span className="underline decoration-white/70 underline-offset-[10px]">Digital Empires</span>
-                <br/> with measured ambition.
-              </>}
-              subtitle={<>
+          <RevealHeadline
+            kicker="AI • SCOOP • DESIGN"
+            title={
+              <>
+                Where <span className="underline decoration-white/70 underline-offset-[10px]">data meets design</span>
+                <br /> — and clarity wins.
+              </>
+            }
+            subtitle={
+              <>
                 I build disciplined models and wrap them in elegant interfaces—tools that help teams decide faster.
-              </>}
-            />
+              </>
+            }
+          />
+
             <div className="mt-4"><QuoteTicker/></div>
             <div className="mt-6 flex flex-wrap gap-3">
               <Seal href="mailto:rampurawallamiya@gmail.com" label="Email" icon={Mail} />
@@ -399,7 +425,7 @@ export default function App(){
               </div>
             </div>
             <TiltCard light className="text-[rgba(0,0,0,0.9)]" padding="p-6">
-              <form action="https://formspree.io/f/yourFormID" method="POST" className="space-y-3" aria-label="Contact form" onSubmit={onSubmit}>
+              <form action="https://formspree.io/f/mjkaowyq" method="POST" className="space-y-3" aria-label="Contact form" onSubmit={onSubmit}>
                 <label className="block text-sm font-medium" htmlFor="name" style={{color:INK}}>Your Name</label>
                 <input id="name" name="name" required placeholder="Ada Lovelace" className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 outline-none focus:ring-2 focus:ring-[rgba(11,26,58,0.35)]" />
 
