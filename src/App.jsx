@@ -289,12 +289,12 @@ export default function App(){
             kicker="AI • SCOOP • DESIGN"
             title={
               <>
-                Where data meets design<br/> and clarity wins.
+                This is what ambition looks like - compiled.
               </>
             }
             subtitle={
               <>
-                I build disciplined models and wrap them in elegant interfaces—tools that help teams decide faster.
+                Discipline in the code. Emotion in the outcome.
               </>
             }
           />
@@ -491,13 +491,13 @@ export default function App(){
             <TiltCard light className="text-[rgba(0,0,0,0.9)]" padding="p-6">
               <form action="https://formspree.io/f/mjkaowyq" method="POST" className="space-y-3" aria-label="Contact form" onSubmit={onSubmit}>
                 <label className="block text-sm font-medium" htmlFor="name" style={{color:INK}}>Your Name</label>
-                <input id="name" name="name" required placeholder="Ada Lovelace" className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 outline-none focus:ring-2 focus:ring-[rgba(11,26,58,0.35)]" />
+                <input id="name" name="name" required placeholder="Charles Leclerec" className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 outline-none focus:ring-2 focus:ring-[rgba(11,26,58,0.35)]" />
 
                 <label className="block text-sm font-medium" htmlFor="email" style={{color:INK}}>Your Email</label>
-                <input id="email" type="email" name="email" required placeholder="ada@example.com" className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 outline-none focus:ring-2 focus:ring-[rgba(11,26,58,0.35)]" />
+                <input id="email" type="email" name="email" required placeholder="charles.leclerc@gmail.com" className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 outline-none focus:ring-2 focus:ring-[rgba(11,26,58,0.35)]" />
 
                 <label className="block text-sm font-medium" htmlFor="message" style={{color:INK}}>Your Message</label>
-                <textarea id="message" name="message" rows={4} required placeholder="What would you like to build?" className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 outline-none focus:ring-2 focus:ring-[rgba(11,26,58,0.35)]" />
+                <textarea id="message" name="message" rows={4} required placeholder="If Charles can chase podiums, you can send an email." className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 outline-none focus:ring-2 focus:ring-[rgba(11,26,58,0.35)]" />
 
                 <button className="px-5 py-3 rounded-xl" style={{ background:NAVY, color:'#fff' }}>
                   Send
