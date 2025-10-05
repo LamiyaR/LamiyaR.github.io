@@ -418,7 +418,10 @@ export default function App(){
               <p className="text-white/80 text-sm text-justify leading-relaxed tracking-[0.01em]">
                 Dubai, UAE • Apr 2024 – Dec 2024
               </p>
-              <ul className="list-disc list-inside mt-2 space-y-1 text-sm text-justify leading-relaxed tracking-[0.01em]">
+              <ul
+                className="list-disc list-outside pl-5 mt-2 space-y-1 text-sm text-justify leading-relaxed tracking-[0.01em]"
+                style={{ textIndent: '-1em', paddingLeft: '2em' }}
+              >
                 <li>
                   AI-driven financial analysis assistant (React, MongoDB, Python) increased throughput by ~60%.
                 </li>
@@ -437,7 +440,10 @@ export default function App(){
                 <p className="text-white/80 text-sm text-justify leading-relaxed tracking-[0.01em]">
                   Mumbai, India • Aug 2023 – Mar 2024
                 </p>
-                <ul className="list-disc list-inside mt-2 space-y-1 text-sm text-justify leading-relaxed tracking-[0.01em]">
+                <ul
+                  className="list-disc list-outside pl-5 mt-2 space-y-1 text-sm text-justify leading-relaxed tracking-[0.01em]"
+                  style={{ textIndent: '-1em', paddingLeft: '2em' }}
+                >
                   <li>
                     Wrangled messy datasets and built dashboards (Python/Power BI/Tableau) to surface signals.
                   </li>
@@ -447,6 +453,8 @@ export default function App(){
                 </ul>
               </TiltCard>
             </div>
+
+
           </div>
           <div id="education">
             <div className="flex items-center gap-3 mb-4"><GraduationCap className="w-6 h-6" aria-hidden="true" /><h2 className="text-3xl font-serif font-black">Education</h2></div>
@@ -481,7 +489,7 @@ export default function App(){
           <div className="grid md:grid-cols-2 gap-6 items-start">
             <div>
               <h2 className="text-3xl md:text-4xl font-serif font-black">Let’s Collaborate</h2>
-              <p className="opacity-90 mt-2 max-w-prose">Drop the brief, keep the drama — I’ll bring the data..</p>
+              <p className="opacity-90 mt-2 max-w-prose">Drop the brief, keep the drama — I’ll bring the data. </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <Seal href="mailto:rampurawallamiya@gmail.com" label="Email" icon={Mail} />
                 <Seal href="https://github.com/LamiyaR" label="GitHub" icon={Github} />
