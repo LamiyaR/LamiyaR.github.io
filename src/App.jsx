@@ -289,8 +289,7 @@ export default function App(){
             kicker="AI • SCOOP • DESIGN"
             title={
               <>
-                Where <span className="underline decoration-white/70 underline-offset-[10px]">data meets design</span>
-                <br /> — and clarity wins.
+                Where data meets design<br/> and clarity wins.
               </>
             }
             subtitle={
@@ -311,10 +310,19 @@ export default function App(){
 
           {/* Editorial card */}
           <TiltCard light className="text-[rgba(0,0,0,0.9)]">
-            <h3 className="font-serif text-2xl font-extrabold" style={{color:NAVY}}>Cover Story</h3>
-            <p className="mt-2 text-[15px]">I’m part pattern‑spotter, part product polisher. My sweet spot is where model outputs meet human intuition: fast experiments, clear data stories, and UIs that don’t fight back.</p>
-            <p className="mt-2 text-[15px]">Recently: an AI‑driven financial briefing assistant, a 3D U‑Net/ViT pipeline for early pancreatic‑tumor detection, and a real‑time surveillance system that hits 30 FPS on modest hardware.</p>
+            <h3 className="font-serif text-2xl font-extrabold" style={{ color: NAVY }}>
+              Cover Story
+            </h3>
+            <p className="mt-2 text-[15px] text-justify">
+              I’m part pattern-spotter, part product polisher. My sweet spot is where model outputs meet human intuition:
+              fast experiments, clear data stories, and UIs that don’t fight back.
+            </p>
+            <p className="mt-2 text-[15px] text-justify">
+              Recently: an AI-driven financial briefing assistant, a 3D U-Net/ViT pipeline for early pancreatic-tumor detection,
+              and a real-time surveillance system that hits 30 FPS on modest hardware.
+            </p>
           </TiltCard>
+
         </section>
 
         {/* Projects */}
@@ -323,63 +331,119 @@ export default function App(){
             <BookText className="w-6 h-6" aria-hidden="true" />
             <h2 className="text-3xl md:text-4xl font-serif font-black">Case Files</h2>
           </div>
+
           <div className="grid md:grid-cols-3 gap-6">
             {/* Project 1 */}
             <ProjectCard
-              tag="FEATURE" title="AI‑Assisted Pancreatic Cancer Detection"
-              repo="https://github.com/LamiyaR/QuantumQuest-CTPancreas"
-              demo="#" img="/images/pancreas_ui.png"
+              tag="FEATURE"
+              title="AI-Assisted Pancreatic Cancer Detection"
+              repo="https://github.com/LamiyaR/AI_Assisted_Pancreatic_Cancer_Using_Non_Contrast_CT_Scan"
+              demo="#"
+              img="/images/pancreas_ui.png"
               alt="CT segmentation UI with overlays"
-              stack={["3D U‑Net","ViT","TensorFlow","Flask","React","MongoDB","DICOM/NIfTI"]}
-              highlights={["Dice 94% (pancreas), 91% (tumor); ~9 s/scan.","SSL/TLS, role‑based clinician access, audit trails."]}
-              story={<p>Started as a mentor’s question: <em>could we surface subtle T1b tumors without contrast?</em> Early models over‑segmented around vessels. I added vessel‑aware augmentations and a ViT block for context; false positives fell and mixed‑precision + tiling pushed inference under 10 seconds.</p>}
-              onOpenModal={()=>setOpenProject('pancreas')}
+              stack={["3D U-Net", "ViT", "TensorFlow", "Flask", "React", "MongoDB", "DICOM/NIfTI"]}
+              highlights={[
+                "Dice 94% (pancreas), 91% (tumor); ~9 s/scan.",
+                "SSL/TLS, role-based clinician access, audit trails.",
+              ]}
+              story={
+                <p className="text-justify leading-relaxed tracking-[0.01em]">
+                  Started as a mentor’s question: <em>could we surface subtle T1b tumors without contrast?</em> Early models
+                  over-segmented around vessels. I added vessel-aware augmentations and a ViT block for context; false positives
+                  fell and mixed-precision + tiling pushed inference under 10 seconds.
+                </p>
+              }
+              onOpenModal={() => setOpenProject("pancreas")}
             />
+
             {/* Project 2 */}
             <ProjectCard
-              tag="SURVEILLANCE" title="Spector — Watchful AI"
-              repo="https://github.com/LamiyaR/Spector-WatchfulAI"
-              demo="#" img="/images/spector.png"
+              tag="SURVEILLANCE"
+              title="Spector — Watchful AI"
+              repo="https://github.com/LamiyaR/Spector_Watchful_AI"
+              demo="#"
+              img="/images/spector.png"
               alt="Surveillance dashboard with tracked individuals"
-              stack={["YOLOv8","Haar","OpenCV","Keras"]}
-              highlights={["Tracks 50+ people/frame at 30 FPS.","94% detection, 92% gender precision after fairness tweaks."]}
-              story={<p>Born at a campus safety hackathon. Trust—not accuracy—was the bottleneck. I introduced demographic‑balanced sampling and threshold calibration sessions with users. Result: 28% fewer false positives and a UI that highlights uncertainty instead of hiding it.</p>}
-              onOpenModal={()=>setOpenProject('spector')}
+              stack={["YOLOv8", "Haar", "OpenCV", "Keras"]}
+              highlights={[
+                "Tracks 50+ people/frame at 30 FPS.",
+                "94% detection, 92% gender precision after fairness tweaks.",
+              ]}
+              story={
+                <p className="text-justify leading-relaxed tracking-[0.01em]">
+                  Born at a campus safety hackathon. Trust—not accuracy—was the bottleneck. I introduced demographic-balanced
+                  sampling and threshold calibration sessions with users. The result: 28% fewer false positives and a UI that
+                  highlights uncertainty instead of hiding it.
+                </p>
+              }
+              onOpenModal={() => setOpenProject("spector")}
             />
+
             {/* Project 3 */}
             <ProjectCard
-              tag="PLATFORM" title="Novella Nest — Book Web App"
-              repo="https://github.com/LamiyaR/NovellaNest"
-              demo="#" img="/images/novella.png"
+              tag="PLATFORM"
+              title="Novella Nest — Book Web App"
+              repo="https://github.com/LamiyaR/Ecommerce_Book_Selling_Website_Novella_Nest"
+              demo="#"
+              img="/images/novella.png"
               alt="Book platform interface with chat and recs"
-              stack={["Django","Channels","TensorFlow","SQLite","Bootstrap"]}
-              highlights={["24/7 live community chat.","TF embeddings + clickstream recs raised session depth."]}
-              story={<p>Wanted a place where readers and authors meet without friction. Popularity‑only recs felt stale, so I instrumented clickstream events and trained embeddings on user–book interactions. Chats grew livelier and weekly bot‑curated reading clubs emerged from trending themes.</p>}
-              onOpenModal={()=>setOpenProject('novella')}
+              stack={["Django", "Channels", "TensorFlow", "SQLite", "Bootstrap"]}
+              highlights={[
+                "24/7 live community chat.",
+                "TF embeddings + clickstream recs raised session depth.",
+              ]}
+              story={
+                <p className="text-justify leading-relaxed tracking-[0.01em]">
+                  Wanted a place where readers and authors meet without friction. Popularity-only recs felt stale, so I
+                  instrumented clickstream events and trained embeddings on user–book interactions. Chats grew livelier and
+                  weekly bot-curated reading clubs emerged from trending themes.
+                </p>
+              }
+              onOpenModal={() => setOpenProject("novella")}
             />
           </div>
         </section>
 
+
         {/* Experience & Education */}
         <section id="experience" className="py-6 grid md:grid-cols-2 gap-6">
           <div>
-            <div className="flex items-center gap-3 mb-4"><Briefcase className="w-6 h-6" aria-hidden="true" /><h2 className="text-3xl font-serif font-black">Experience</h2></div>
+            <div className="flex items-center gap-3 mb-4">
+              <Briefcase className="w-6 h-6" aria-hidden="true" />
+              <h2 className="text-3xl font-serif font-black">Experience</h2>
+            </div>
+
             <TiltCard className="border-white/10">
               <h3 className="text-xl font-serif font-extrabold">ML Developer Intern — AL Hatimi</h3>
-              <p className="text-white/80 text-sm">Dubai, UAE • Apr 2024 – Dec 2024</p>
-              <ul className="list-disc list-inside mt-2 space-y-1 text-sm">
-                <li>AI‑driven financial analysis assistant (React, MongoDB, Python) increased throughput by ~60%.</li>
-                <li>One‑line briefings cut manual triage by ~70%; cross‑functional rollout led to ~40% higher adoption.</li>
-                <li>Partnered with analysts to tune thresholds so outputs matched human judgment.</li>
+              <p className="text-white/80 text-sm text-justify leading-relaxed tracking-[0.01em]">
+                Dubai, UAE • Apr 2024 – Dec 2024
+              </p>
+              <ul className="list-disc list-inside mt-2 space-y-1 text-sm text-justify leading-relaxed tracking-[0.01em]">
+                <li>
+                  AI-driven financial analysis assistant (React, MongoDB, Python) increased throughput by ~60%.
+                </li>
+                <li>
+                  One-line briefings cut manual triage by ~70%; cross-functional rollout led to ~40% higher adoption.
+                </li>
+                <li>
+                  Partnered with analysts to tune thresholds so outputs matched human judgment.
+                </li>
               </ul>
             </TiltCard>
+
             <div className="mt-4">
               <TiltCard className="border-white/10">
                 <h3 className="text-xl font-serif font-extrabold">Data Analyst Intern — Heuristic Academy</h3>
-                <p className="text-white/80 text-sm">Mumbai, India • Aug 2023 – Mar 2024</p>
-                <ul className="list-disc list-inside mt-2 space-y-1 text-sm">
-                  <li>Wrangled messy datasets and built dashboards (Python/Power BI/Tableau) to surface signals.</li>
-                  <li>Applied ML to trim false alarms and spotlight high‑leverage variables for decision makers.</li>
+                <p className="text-white/80 text-sm text-justify leading-relaxed tracking-[0.01em]">
+                  Mumbai, India • Aug 2023 – Mar 2024
+                </p>
+                <ul className="list-disc list-inside mt-2 space-y-1 text-sm text-justify leading-relaxed tracking-[0.01em]">
+                  <li>
+                    Wrangled messy datasets and built dashboards (Python/Power BI/Tableau) to surface signals.
+                  </li>
+                  <li>
+                    Applied ML to trim false alarms and spotlight high-leverage variables for decision makers.
+                  </li>
                 </ul>
               </TiltCard>
             </div>
@@ -389,13 +453,13 @@ export default function App(){
             <TiltCard light className="text-[rgba(0,0,0,0.9)]">
               <h3 className="text-xl font-serif font-extrabold">California State University, Sacramento</h3>
               <p className="text-[13px]">M.S. Computer Science — AI specialization (in progress) • Target: May 2027</p>
-              <p className="text-[12px] opacity-80 mt-1">Selected topics: Data Mining, AI & DS, DBMS, Software Engineering, IoT, Big Data, Blockchain.</p>
             </TiltCard>
             <div className="mt-4">
               <TiltCard light className="text-[rgba(0,0,0,0.9)]">
                 <h3 className="text-xl font-serif font-extrabold">University of Mumbai</h3>
                 <p className="text-[13px]">B.Tech. in Information Technology • May 2025</p>
                 <p className="text-[12px] opacity-80 mt-1">Graduated with first‑class distinction.</p>
+                <p className="text-[12px] opacity-80 mt-1">Course Work: Data Mining, AI & DS, DBMS, Software Engineering, IoT, Big Data, Blockchain.</p>
               </TiltCard>
             </div>
           </div>
@@ -417,7 +481,7 @@ export default function App(){
           <div className="grid md:grid-cols-2 gap-6 items-start">
             <div>
               <h2 className="text-3xl md:text-4xl font-serif font-black">Let’s Collaborate</h2>
-              <p className="opacity-90 mt-2 max-w-prose">If it’s ambitious, audacious, or simply delightful—I’d love to help build it. I reply quickly.</p>
+              <p className="opacity-90 mt-2 max-w-prose">Drop the brief, keep the drama — I’ll bring the data..</p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <Seal href="mailto:rampurawallamiya@gmail.com" label="Email" icon={Mail} />
                 <Seal href="https://github.com/LamiyaR" label="GitHub" icon={Github} />
@@ -442,7 +506,7 @@ export default function App(){
               </form>
             </TiltCard>
           </div>
-          <p className="text-center text-xs opacity-70 mt-6">© {new Date().getFullYear()} Lamiya Rampurawala • Built with React & Tailwind</p>
+          <p className="text-center text-xs opacity-70 mt-6">© {new Date().getFullYear()} Lamiya Rampurawala • Powered by React, caffeine, and pure audacity.</p>
         </section>
       </main>
 
