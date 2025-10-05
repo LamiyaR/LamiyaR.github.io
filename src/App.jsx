@@ -414,46 +414,49 @@ export default function App(){
             </div>
 
             <TiltCard className="border-white/10">
-              <h3 className="text-xl font-serif font-extrabold">ML Developer Intern — AL Hatimi</h3>
+              <h3 className="text-xl font-serif font-extrabold">
+                ML Developer Intern — AL Hatimi
+              </h3>
               <p className="text-white/80 text-sm text-justify leading-relaxed tracking-[0.01em]">
                 Dubai, UAE • Apr 2024 – Dec 2024
               </p>
               <ul
-                className="list-disc list-outside pl-5 mt-2 space-y-1 text-sm text-justify leading-relaxed tracking-[0.01em]"
-                style={{ textIndent: '-1em', paddingLeft: '2em' }}
+                className="list-disc list-outside mt-2 space-y-1 text-sm text-justify leading-relaxed tracking-[0.01em]"
+                style={{ paddingLeft: '1.5em' }}
               >
                 <li>
-                  AI-driven financial analysis assistant (React, MongoDB, Python) increased throughput by ~60%.
+                  Built an AI-driven financial analysis assistant (React, MongoDB, Python) that increased throughput by ~60%.
                 </li>
                 <li>
-                  One-line briefings cut manual triage by ~70%; cross-functional rollout led to ~40% higher adoption.
+                  Designed one-line briefings that reduced manual triage by ~70%; cross-functional rollout achieved ~40% higher adoption.
                 </li>
                 <li>
-                  Partnered with analysts to tune thresholds so outputs matched human judgment.
+                  Partnered with analysts to tune thresholds, ensuring outputs aligned with human judgment.
                 </li>
               </ul>
             </TiltCard>
 
             <div className="mt-4">
               <TiltCard className="border-white/10">
-                <h3 className="text-xl font-serif font-extrabold">Data Analyst Intern — Heuristic Academy</h3>
+                <h3 className="text-xl font-serif font-extrabold">
+                  Data Analyst Intern — Heuristic Academy
+                </h3>
                 <p className="text-white/80 text-sm text-justify leading-relaxed tracking-[0.01em]">
                   Mumbai, India • Aug 2023 – Mar 2024
                 </p>
                 <ul
-                  className="list-disc list-outside pl-5 mt-2 space-y-1 text-sm text-justify leading-relaxed tracking-[0.01em]"
-                  style={{ textIndent: '-1em', paddingLeft: '2em' }}
+                  className="list-disc list-outside mt-2 space-y-1 text-sm text-justify leading-relaxed tracking-[0.01em]"
+                  style={{ paddingLeft: '1.5em' }}
                 >
                   <li>
-                    Wrangled messy datasets and built dashboards (Python/Power BI/Tableau) to surface signals.
+                    Cleaned and structured messy datasets; built dashboards (Python, Power BI, Tableau) to surface key insights.
                   </li>
                   <li>
-                    Applied ML to trim false alarms and spotlight high-leverage variables for decision makers.
+                    Applied ML models to reduce false alarms and highlight high-impact variables for decision makers.
                   </li>
                 </ul>
               </TiltCard>
             </div>
-
             
           </div>
           <div id="education">
