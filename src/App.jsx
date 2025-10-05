@@ -454,7 +454,7 @@ export default function App(){
               </TiltCard>
             </div>
 
-
+            
           </div>
           <div id="education">
             <div className="flex items-center gap-3 mb-4"><GraduationCap className="w-6 h-6" aria-hidden="true" /><h2 className="text-3xl font-serif font-black">Education</h2></div>
