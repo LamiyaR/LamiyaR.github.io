@@ -152,7 +152,7 @@ export default function App(){
             </ParallaxLayer>
             <TiltCard>
               <div className="grid grid-cols-3 gap-3">
-                <div className="col-span-2 h-64 md:h-80 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-end p-4" style={{backgroundImage:"url('/images/IMG_5694.jpg')", backgroundSize:'cover', backgroundPosition:'center'}}>
+                <div className="col-span-2 h-64 md:h-80 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-end p-4" style={{backgroundImage:"url('public/images/IMG_5694.jpg')", backgroundSize:'cover', backgroundPosition:'center'}}>
                   <div className="bg-black/40 px-3 py-1 rounded text-xs tracking-widest uppercase">MUMBAI → SACRAMENTO → WORLD</div>
                 </div>
                 <div className="h-64 md:h-80 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-col items-center justify-center gap-2">
